@@ -41,7 +41,6 @@ const EditLessonMaterialModal = ({
   });
 
   useEffect(() => {
-    console.log('data', data)
     if(data) {
       setSessionData(data)
     }
