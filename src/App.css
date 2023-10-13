@@ -50,3 +50,52 @@ li {
   list-style: none;
   list-style-type: none !important;
 }
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #f4f4f4;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: none;
+  width: 12rem;
+  border-radius: 4px;
+  z-index: 999;
+  font-size: 12px;
+}
+
+.dropdown-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-container:hover .dropdown-list {
+  display: block;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  background: #000;
+  opacity: .7;
+}

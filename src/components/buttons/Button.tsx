@@ -6,12 +6,12 @@ const Button = (
   }: 
   {
   color: string,
-  onClick: () => void;
+  onClick?: () => void;
   children: any
 }) => {
   return (
     <>
-      <button onClick={() => onClick()} className={`font-medium rounded-md text-sm px-5 flex gap-2 items-center py-2.5 mb-2 ${color}`}>
+      <button onClick={onClick} className={`font-medium rounded-md text-sm px-5 flex gap-2 items-center py-2.5 ${color}`}>
         {children}
       </button>
     </>

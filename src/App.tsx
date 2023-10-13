@@ -8,6 +8,8 @@ import { AiOutlineEye } from 'react-icons/ai'
 import Button from "./components/buttons/Button";
 import ButtonOutline from "./components/buttons/ButtonOutline";
 import { Tabs } from "./components/tabs/tabs";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
 
   return (
     <div>
+      <ToastContainer />
       <Header />
       <div className="container mx-auto">
         <div className="flex mt-[3em] items-center">
